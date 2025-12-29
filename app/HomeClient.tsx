@@ -139,6 +139,8 @@ export default function HomeClient() {
             <section className="max-w-7xl mx-auto px-6 pt-24 pb-16">
                 <div className="border-t border-gray-300 mb-10" />
                 <div className="text-xs leading-relaxed text-gray-600 max-w-5xl">
+
+                    <p><strong>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</strong></p>
                     <p>
                         Accurate Machinery is an independent engineering and fabrication
                         company based in Texas, specializing in precision manufacturing,
