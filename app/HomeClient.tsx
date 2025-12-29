@@ -50,10 +50,6 @@ export default function HomeClient() {
                         <p>
                             We support both in-house development and contract manufacturing
                             for specialized applications.{' '}
-                            <span
-                                onClick={() => setShowContact((v) => !v)}
-                                className="text-gray-500 hover:text-gray-700 cursor-pointer transition-colors"
-                            >{showContact ? 'Hide Contact Form' : 'Contact Us'}</span>
                         </p>
                     </div>
 
@@ -78,6 +74,10 @@ export default function HomeClient() {
                         <p>
                             Select projects are publicly documented and linked for reference
                             and collaboration.
+                            <span
+                                onClick={() => setShowContact((v) => !v)}
+                                className="text-gray-500 hover:text-gray-700 cursor-pointer transition-colors"
+                            ><strong>{showContact ? ' Hide Contact Form' : ' Contact Form'}</strong></span>
                         </p>
                     </div>
 
@@ -140,16 +140,38 @@ export default function HomeClient() {
                 <div className="border-t border-gray-300 mb-10" />
                 <div className="text-xs leading-relaxed text-gray-600 max-w-5xl">
 
-                    <p><strong>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</strong></p>
+                    <p><strong>
+                        This site is protected by reCAPTCHA and the Google{' '}
+                        <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-gray-600 transition-colors cursor-pointer"
+                        >
+                            Privacy Policy
+                        </a>{' '}
+                        and{' '}
+                        <a
+                            href="https://policies.google.com/terms"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-gray-600 transition-colors cursor-pointer"
+                        >
+                            Terms of Service
+                        </a>{' '}
+                        apply.
+                    </strong></p>
+                    <p>
+                        Accurate Machinery respects your privacy. We collect only the information you voluntarily
+                        provide through the contact form, such as your name, email address, phone number, and
+                        message content. This information is used solely to respond to inquiries and communicate
+                        regarding our services or projects. We do not sell, rent, or share your personal
+                        information with third parties.
+                    </p>
                     <p>
                         Accurate Machinery is an independent engineering and fabrication
                         company based in Texas, specializing in precision manufacturing,
                         industrial tooling, and custom mechanical solutions.
-                    </p>
-                    <p>
-                        Our work spans automotive service equipment, modular systems,
-                        CNC-machined components, and production-ready assemblies developed
-                        for long-term use.
                     </p>
                     <p>
                         We collaborate with manufacturers, engineers, and integrators to
